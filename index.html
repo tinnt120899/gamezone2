@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+          name="viewport">
+    <title>Title</title>
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.14.0/css/v4-shims.css" rel="stylesheet">
+
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container-fluid m-0 p-0">
+    <canvas id="particlesField" class="m-0 p-0">This Browser is not supported</canvas>
+
+    <nav class="hr-bottom navbar navbar-expand-xl sticky-top align-items-end bg-none">
+        <!--  Show this only on mobile to medium screens  -->
+        <a class="navbar-brand d-xl-none align-items-center" href="index.html">
+            <img class="mr-2" src="img/group.png">
+        </a>
+
+        <button aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler parent-elem mb-2"
+                data-target="#navbarToggle" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon">
+                <i class="fas fa-bars text-danger"></i>
+            </span>
+        </button>
+
+        <!--  Use flexbox utility classes to change how the child elements are justified  -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarToggle">
+            <!--   Show this only lg screens and up   -->
+            <a class="navbar-brand d-none d-xl-block" href="index.html">
+                <img class="logo mr-5" src="img/group.png">
+            </a>
+
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item mr-3">
+                    <a class="nav-link title-menu">Home</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link title-menu">Games</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link title-menu">Order</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link title-menu">FAQ</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link title-menu">Promotions</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <input class="w-100 searchInput" placeholder="Enter keywords to search..." type="text">
+                </li>
+                <li class="nav-item">
+                    <i class="fas fa-user-circle text-white fa-2x"></i>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row justify-content-center m-0 mb-5">
+        <div class="col-12">
+            <img class="img-fluid parent" src="img/881376@2x.jpg">
+
+            <div class="row justify-content-center">
+                <div class="col-xl-3 col-lg-4 col-md-6 d-md-block d-none title-header">
+                    <div class="text-center">
+                        <h1 class="mb-3 font-weight-bold">Pay to win !</h1>
+                        <p class="sub-title">The security our user's accounts and personal information, are our main
+                            priority.
+                            The security our user's accounts and personal information, are our main priority.
+                        </p>
+                        <button class="border-radius-btn">Check it out</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-8 col-sm-12 p-5 d-none d-md-block">
+            <div class="carousel slide" data-ride="carousel" id="carouselExampleIndicators">
+                <ol class="carousel-indicators">
+                    <li class="active" data-slide-to="0" data-target="#carouselExampleIndicators"></li>
+                    <li data-slide-to="1" data-target="#carouselExampleIndicators"></li>
+                    <li data-slide-to="2" data-target="#carouselExampleIndicators"></li>
+                </ol>
+                <div class="carousel-inner radius-28">
+                    <div class="carousel-item active">
+                        <img alt="First slide" class="d-block w-100"
+                             src="img/group-22.png">
+                        <div class="carousel-caption d-none d-lg-block">
+                            <h5 class="font-weight-bold">Special title treatment</h5>
+                            <p class="d-none d-xl-block font-weight-normal">With supporting text below as a natural lead-in to additional
+                                content.</p>
+                            <button class="border-radius-btn"><img class="mr-2 mb-1" src="img/group_2.png">Get the deal
+                            </button>
+                        </div>
+                        <span class="btn-product tag-slider text-center d-lg-block d-none">Hot deal</span>
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="Second slide" class="d-block w-100"
+                             src="img/group-22.png">
+                        <div class="carousel-caption d-none d-lg-block">
+                            <h5 class="font-weight-bold">Special title treatment</h5>
+                            <p class="d-none d-xl-block font-weight-normal">With supporting text below as a natural lead-in to additional
+                                content.</p>
+                            <button class="border-radius-btn"><img class="mr-2 mb-1" src="img/group_2.png">Get the deal
+                            </button>
+                        </div>
+                        <span class="btn-product tag-slider text-center d-lg-block d-none">Hot deal</span>
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="Third slide" class="d-block w-100"
+                             src="img/group-22.png">
+                        <div class="carousel-caption d-none d-lg-block">
+                            <h5 class="font-weight-bold">Special title treatment</h5>
+                            <p class="d-none d-xl-block font-weight-normal">With supporting text below as a natural lead-in to additional
+                                content.</p>
+                            <button class="border-radius-btn"><img class="mr-2 mb-1" src="img/group_2.png">Get the deal
+                            </button>
+                        </div>
+                        <span class="btn-product tag-slider text-center d-lg-block d-none">Hot deal</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center align-items-center text-center m-0 p-0 mb-5">
+        <div class="col-md-4 d-none d-md-block">
+            <img class="mt-4 w-100 img-fluid" src="img/path-2.png">
+        </div>
+        <div class="col-xl-1 col-lg-2 col-md-2 p-0 mb-2">
+            <span class="title">Games</span>
+        </div>
+        <div class="col-md-4 d-none d-md-block">
+            <img class="mt-4 w-100 img-fluid" src="img/path-2_2.png">
+        </div>
+
+        <div class="col-10 p-0">
+            <span class="sub-title">Shop our popular products for this season</span>
+        </div>
+    </div>
+
+    <div class="row justify-content-center m-0 mb-3">
+
+        <div class="col-md-5 mb-md-3 p-md-0 pl-sm-3 pr-sm-5 text-center">
+            <input class="mr-3 searchInput w-100" placeholder="Enter keywords to search..." type="text">
+        </div>
+        <div class="col-lg-2 col-md-3 mb-md-3 text-center">
+            <div class="btn-group" role="group">
+                <button aria-expanded="false" aria-haspopup="true" class="border-radius-btn dropdown-toggle mt-2"
+                        data-toggle="dropdown" id="btnGroupDrop1" type="button">
+                    All category
+                </button>
+                <div aria-labelledby="btnGroupDrop1" class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Category 1</a>
+                    <a class="dropdown-item" href="#">Category 2</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center background-tab m-0 mb-5">
+        <div class="col-md-8 col-sm-12">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item active">
+                    <a aria-controls="home" aria-selected="true" class="nav-link active" data-toggle="tab" href="#home"
+                       id="best-seller-tab" role="tab">Best seller</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-controls="profile" aria-selected="false" class="nav-link" data-toggle="tab" href="#profile"
+                       id="most-discount-tab" role="tab">Most discount</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-controls="contact" aria-selected="false" class="nav-link" data-toggle="tab" href="#contact"
+                       id="newest-tab" role="tab">Newest</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div aria-labelledby="best-seller-tab" class="tab-pane fade show active" id="home" role="tabpanel">
+
+                    <div class="row justify-content-center pl-5 pr-5 pt-4">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_7.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_8.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_9.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_10.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_7.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_8.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_9.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_10.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_7.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_8.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_9.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_10.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center mt-4">
+                        <div class="col-md-4 col-sm-4">
+                            <button class="border-radius-btn w-100">View more</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div aria-labelledby="most-discount-tab" class="tab-pane fade" id="profile" role="tabpanel">
+
+                    <div class="row justify-content-center pl-5 pr-5 pt-4">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_7.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_8.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_9.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_10.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_7.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_8.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_9.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_10.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_7.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_8.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_9.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_10.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center mt-4">
+                        <div class="col-4">
+                            <button class="border-radius-btn w-100">View more</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div aria-labelledby="newest-tab" class="tab-pane fade" id="contact" role="tabpanel">
+
+                    <div class="row justify-content-center pl-5 pr-5 pt-4">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_7.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_8.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_9.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_10.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_7.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_8.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_9.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_10.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_7.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_8.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_9.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 p-2 mb-3">
+                            <div class="product-card border-radius">
+                                <div class="badge">Sale -30%</div>
+                                <img class="favorite" src="img/favorite-on.png">
+
+                                <img class="img-fluid border-radius img-product-size p-2" src="img/bitmap_10.png">
+
+                                <div class="product-details p-2">
+                                    <span class="product-catagory">Lol wild rift</span>
+                                    <span class="price">1200 RP</span>
+                                </div>
+
+                                <div class="product-bottom-details">
+                                    <div class="a product-price text-center pt-1 pl-1"><small class="">$96.00</small>$230.99
+                                    </div>
+                                    <div class="b text-center pl-3 pt-1">
+                                        <span class="font-10"><img class="mr-2" src="img/group_2.png">Buy now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center mt-4">
+                        <div class="col-4">
+                            <button class="border-radius-btn w-100">View more</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center align-items-center text-center m-0 p-0 mb-5">
+        <div class="col-md-4 d-none d-md-block">
+            <img class="mt-4 w-100" src="img/path-2.png">
+        </div>
+        <div class="col-lg-2 col-md-3 p-0 mb-2">
+            <span class="title p-0">Our Features</span>
+        </div>
+        <div class="col-md-4 d-none d-md-block">
+            <img class="mt-4 w-100" src="img/path-2_2.png">
+        </div>
+
+        <div class="col-10 p-0">
+            <span class="sub-title">Shop our popular products for this season</span>
+        </div>
+    </div>
+
+    <div class="row justify-content-center m-0">
+
+        <div class="col-md-8 col-sm-12 mb-5">
+            <div class="row">
+                <div class="col-xl-3 col-md-6 col-sm-12 p-4 text-center">
+                    <img src="img/savings.png"><br>
+                    <h5 class="font-weight-bold text-white mt-2">Competive Pricing</h5>
+                    <p class="sub-title mt-3">The security our user's accounts and personal information, are our main
+                        priority</p>
+                </div>
+
+                <div class="col-xl-3 col-md-6 col-sm-12 p-4 text-center">
+                    <img src="img/antivirus.png"><br>
+                    <h5 class="font-weight-bold text-white mt-2">Competive Pricing</h5>
+                    <p class="sub-title mt-3">The security our user's accounts and personal information, are our main
+                        priority</p>
+                </div>
+
+                <div class="col-xl-3 col-md-6 col-sm-12 p-4 text-center">
+                    <img src="img/headphones-1.png"><br>
+                    <h5 class="font-weight-bold text-white mt-2">Competive Pricing</h5>
+                    <p class="sub-title mt-3">The security our user's accounts and personal information, are our main
+                        priority</p>
+                </div>
+
+                <div class="col-xl-3 col-md-6 col-sm-12 p-4 text-center">
+                    <img src="img/worldwide.png"><br>
+                    <h5 class="font-weight-bold text-white mt-2">Competive Pricing</h5>
+                    <p class="sub-title mt-3">The security our user's accounts and personal information, are our main
+                        priority</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="row justify-content-center align-items-center text-center bg-danger m-0 p-2 w-100 hr-bottom mt-5 ">
+
+        <div class="col-xl-1 col-lg-2 col-md-2 col-sm-2 m-2">
+            <img src="img/bitmap_6.png">
+        </div>
+        <div class="col-xl-1 col-lg-2 col-md-2 col-sm-2 m-2">
+            <img src="img/bitmap_4.png">
+        </div>
+        <div class="col-xl-1 col-lg-2 col-md-2 col-sm-2 m-2">
+            <img src="img/bitmap_3.png">
+        </div>
+        <div class="col-xl-1 col-lg-2 col-md-2 col-sm-2 m-2">
+            <img src="img/bitmap_2.png">
+        </div>
+        <div class="col-xl-1 col-lg-2 col-md-2 col-sm-2 m-2">
+            <img src="img/bitmap_5.png">
+        </div>
+        <div class="col-xl-1 col-lg-2 col-md-2 col-sm-2 m-2">
+            <img src="img/bitmap.png">
+        </div>
+        <div class="col-xl-1 col-lg-2 col-md-2 col-sm-2 m-2">
+            <img src="img/symbol.png">
+        </div>
+
+    </div>
+
+    <div class="footer m-0 pt-5 pb-4 pl-5 pr-5">
+        <div class="row justify-content-center mb-5">
+            <div class="col-xl-4 col-lg-6 col-md-8 col-sm-12 text-center">
+                <img class="mb-4" src="img/group@2x.png">
+                <p class="sub-title">
+                    The security our user's accounts and personal information, are our main priority.
+                    The security our user's accounts and personal information, are our main priority.
+                </p>
+                <div class="row justify-content-center mt-4 mb-3 align-items-end">
+                    <div class="col p-0 mr-2 mt-1 text-center">
+                        <img src="img/group-6_2.png"><br>
+                        <span class="sub-title">Facebook</span>
+                    </div>
+                    <div class="col p-0 mr-2 mt-1 text-center">
+                        <img src="img/skype.png"><br>
+                        <span class="sub-title">Skype</span>
+                    </div>
+                    <div class="col p-0 mr-2 mt-1 text-center">
+                        <img src="img/group-6.png"><br>
+                        <span class="sub-title">Telegram</span>
+                    </div>
+                    <div class="col p-0 mr-2 mt-1 text-center">
+                        <img src="img/viber.png"><br>
+                        <span class="sub-title">Viber</span>
+                    </div>
+                    <div class="col p-0 mt-1 text-center">
+                        <img src="img/combined-shape.png"><br>
+                        <span class="sub-title">Wechat</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <hr style="background: #d3d3d3">
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-2">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 text-center">
+                <span class="sub-title"><i class="far fa-copyright"></i> 2020. All Rights Reserved</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script crossorigin="anonymous" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script src="animation/animation-two-way.js"></script>
+<script src="index.js"></script>
+
+
+</body>
+
+</html>
