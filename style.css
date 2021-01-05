@@ -16,7 +16,7 @@ canvas {
 }
 
 .container-fluid {
-    background-color: #000000;
+    background-color: #05193c;
     font-family: 'Noto Sans JP', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
@@ -27,14 +27,24 @@ canvas {
     overflow-x: hidden !important;
 }
 
-.text-danger {
-    color: #970000 !important;
+.main-background {
+    background: #05193c !important;
+}
+
+.sub-background {
+    background-image: linear-gradient(to bottom, #061632, #05193c);
+    height: 40px;
+}
+
+.text-primary {
+    color: #02b6ff !important;
 }
 
 .footer {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%,
-    rgba(0, 0, 0, 0.8) 100%),
-    url("img/cb-109-d-5-d-1402-ae-804422-a-89-aa-168-da-00@3x.png");
+    background-image: linear-gradient(to bottom, rgba(2, 25, 60, 0.8) 0%,
+    rgba(2, 25, 60, 0.9) 100%),
+    url("img/group-22@2x.png");
+    /*background-image: url("img/group-22@2x.png");*/
     background-repeat: no-repeat;
     background-position: 50% 0;
     -ms-background-size: cover;
@@ -56,18 +66,23 @@ canvas {
 }
 
 .bg-danger {
-    background: #440000 !important;
+    background: #0b3c91 !important;
 }
 
 .parent {
     position: relative;
-    max-height: 800px;
+    max-height: 900px;
     width: 100%;
-    /*opacity: 0.6;*/
+    opacity: 0.8;
+}
+
+.absolute-carousel {
+    position: absolute;
+    top: 60%;
 }
 
 .hr-bottom {
-    border-bottom: solid #ffffff 4px;
+    border-bottom: solid #0d88cb 4px;
 }
 
 .bg-none {
@@ -75,6 +90,14 @@ canvas {
     position: absolute;
     z-index: 1;
     width: 100%;
+}
+
+.collapsing{
+    background-color: rgba(2, 25, 60, 0.8) !important;
+}
+
+.collapse.show{
+    background-color: rgba(2, 25, 60, 0.8) !important;
 }
 
 .border-radius {
@@ -109,7 +132,7 @@ canvas {
 }
 
 .btn-product {
-    background-image: linear-gradient(to top, #880000, #cc3b29);
+    background-image: linear-gradient(to top, #0158b1, #02b6ff);
     font-size: 14px;
     font-weight: bold;
     color: #ffffff;
@@ -126,7 +149,8 @@ canvas {
 
 .title-header {
     position: absolute;
-    top: 40%;
+    top: 30%;
+    left: 10%;
     color: #ffffff;
 }
 
@@ -153,6 +177,10 @@ canvas {
     border-radius: 15px;
 }
 
+.carousel-item img {
+    max-height: 300px;
+}
+
 h2 {
     font: 33px sans-serif;
     margin-top: 30px;
@@ -170,7 +198,7 @@ h2 {
 
 .title {
     /* to hide the lines from behind the text, you have to set the background color the same as the container */
-    background: #000000;
+    background: #05193c;
     color: white;
     padding: 0 15px;
     font-size: 24px;
@@ -184,9 +212,9 @@ h2.double:before {
 
 h2.double:after {
     border-bottom: 1px solid blue;
-    -webkit-box-shadow: 0 1px 0 0 red;
-    -moz-box-shadow: 0 1px 0 0 red;
-    box-shadow: 0 1px 0 0 red;
+    -webkit-box-shadow: 0 1px 0 0 #204680;
+    -moz-box-shadow: 0 1px 0 0 #204680;
+    box-shadow: 0 1px 0 0 #204680;
     content: "";
     margin: 0 auto;
     /* this centers the line to the full width specified */
@@ -199,7 +227,7 @@ h2.double:after {
 }
 
 .nav-tabs {
-    border-bottom: 1px solid #cb0000;
+    border-bottom: 1px solid #57baf7;
 }
 
 .nav-item {
@@ -207,12 +235,12 @@ h2.double:after {
 }
 
 .nav-tabs .nav-link.active {
-    background-color: #000000;
-    color: #cb0000;
+    background-color: #05193c;
+    color: #57baf7;
     /*font-size: 20px;*/
     font-weight: bold;
     border: 0;
-    border-bottom: 3px solid #cb0000 !important;
+    border-bottom: 3px solid #57baf7 !important;
     font-size: 16px;
 }
 
@@ -234,7 +262,7 @@ a.nav-link {
     border-radius: 20px !important;
     border: solid 1px #707070 !important;
     font-size: 12px;
-    background-color: #373737;
+    background-color: #ffffff;
     background-image: url('img/icon-24-px-ic-search.png');
 
     background-position: 10px 7px;
@@ -250,7 +278,7 @@ a.nav-link {
 .product-card {
     position: relative;
     width: 100%;
-    background: #373737;
+    background: #204680;
 }
 
 .badge {
@@ -260,7 +288,7 @@ a.nav-link {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
-    background: red;
+    background-image: linear-gradient(255deg, #02b6ff, #0158b1);
     color: #fff;
     padding: 3px 10px;
     border-radius: 12px 0;
@@ -313,7 +341,7 @@ a.nav-link {
 
 .product-bottom-details {
     overflow: hidden;
-    background: #252525;
+    background: #0c3370;
     border-radius: 0 0 20px 20px;
     height: 32px;
     position: relative;
@@ -330,15 +358,15 @@ a.nav-link {
     width: 52%;
     height: 100%;
     color: white;
-    border-left: 4px #252525 solid;
-    background-image: linear-gradient(135deg, #252525 25%, transparent 20%),
-    linear-gradient(to top, #880000, #cc3b29);
+    border-left: 4px #0c3370 solid;
+    background-image: linear-gradient(135deg, #0c3370 25%, transparent 20%),
+    linear-gradient(to top, #02b6ff, #0158b1);
 
 }
 
 .product-price {
     font-size: 12px;
-    color: #ffc700;
+    color: #ffffff;
     font-weight: bold;
 }
 
@@ -347,7 +375,7 @@ a.nav-link {
     text-decoration: line-through;
     display: inline-block;
     margin-right: 5px;
-    color: gray;
+    color: #036cdc;
 }
 
 .font-10 {
@@ -365,4 +393,6 @@ button:focus {outline:0;}
         padding: 0;
         overflow: hidden;
     }
+
+
 }
