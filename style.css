@@ -52,7 +52,6 @@ canvas {
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-    text-align: center;
     color: #d3d9e0;
 }
 
@@ -62,17 +61,20 @@ canvas {
 
 .parent {
     position: relative;
-    max-height: 530px;
+    max-height: 800px;
     width: 100%;
-    opacity: 0.6;
+    /*opacity: 0.6;*/
 }
 
 .hr-bottom {
-    border-bottom: solid #970000 4px;
+    border-bottom: solid #ffffff 4px;
 }
 
 .bg-none {
-    background-color: rgba(0, 0, 0) !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
 }
 
 .border-radius {
@@ -99,8 +101,8 @@ canvas {
     width: 160px;
     height: 34px;
     border-radius: 10px;
-    border: solid 1px #cc3b29;
-    background-image: linear-gradient(to top, #880000, #cc3b29);
+    border: solid 2px #02b6ff;
+    background-image: linear-gradient(to top, #0158b1, #02b6ff);
 
     font-weight: normal;
     color: #ffffff;
