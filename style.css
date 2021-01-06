@@ -81,6 +81,21 @@ canvas {
     top: 60%;
 }
 
+.snow {
+    position: relative;
+    bottom: 20%;
+    right: 20%;
+    opacity: 0.8;
+}
+
+.snow-2x {
+    position: absolute;
+    top: 0;
+    left: -30%;
+    opacity: 0.6;
+    z-index: 0;
+}
+
 .hr-bottom {
     border-bottom: solid #0d88cb 4px;
 }
@@ -92,11 +107,11 @@ canvas {
     width: 100%;
 }
 
-.collapsing{
+.collapsing {
     background-color: rgba(2, 25, 60, 0.8) !important;
 }
 
-.collapse.show{
+.collapse.show {
     background-color: rgba(2, 25, 60, 0.8) !important;
 }
 
@@ -158,28 +173,6 @@ canvas {
     border-radius: 28px;
 }
 
-.carousel-caption {
-    width: 50%;
-    left: 5%;
-    top: 5%;
-    text-align: left;
-}
-
-.carousel-indicators li {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-}
-
-.carousel-indicators li.active {
-    width: 20px;
-    height: 10px;
-    border-radius: 15px;
-}
-
-.carousel-item img {
-    max-height: 300px;
-}
 
 h2 {
     font: 33px sans-serif;
@@ -382,7 +375,9 @@ a.nav-link {
     font-size: 10px;
 }
 
-button:focus {outline:0;}
+button:focus {
+    outline: 0;
+}
 
 @media (max-width: 1199px) {
     canvas {
@@ -395,4 +390,58 @@ button:focus {outline:0;}
     }
 
 
+}
+
+/*flickitu-carousel*/
+
+.carousel {
+    background: rgba(0, 0, 0, 0);
+    height: 300px;
+    align-items: center !important;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.carousel-cell {
+    height: 300px;
+    width: 80%;
+
+}
+
+.carousel-cell img {
+    height: 200px;
+    width: 100% !important;
+    margin-top: 4%;
+
+}
+
+.is-selected img {
+    height: 280px;
+    width: 100% !important;
+    margin-top: 0;
+}
+
+/*bootstrap-carousel*/
+
+.carousel-caption {
+    width: 50%;
+    left: 5%;
+    top: 5%;
+    text-align: left;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.carousel-indicators li.active {
+    width: 20px;
+    height: 10px;
+    border-radius: 15px;
+}
+
+.carousel-item img {
+    max-height: 300px;
 }

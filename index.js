@@ -282,4 +282,5 @@
 
         module.exports = Particle;
     }, {}]
-}, {}, ["./src/js/index.js"])
+}, {}, ["./src/js/index.js"]);
+

@@ -9,6 +9,7 @@
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet">
 
     <link href="style.css" rel="stylesheet">
+    <link href="slider/flickity.css" rel="stylesheet">
     <!-- Fontawesome -->
     <link href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.14.0/css/v4-shims.css" rel="stylesheet">
@@ -88,60 +89,74 @@
 
             <div class="row justify-content-center">
                 <div class="col-md-6 col-sm-10 p-5 d-none d-md-block absolute-carousel">
-                    <div class="carousel slide" data-ride="carousel" id="carouselExampleIndicators">
-                        <ol class="carousel-indicators">
-                            <li class="active" data-slide-to="0" data-target="#carouselExampleIndicators"></li>
-                            <li data-slide-to="1" data-target="#carouselExampleIndicators"></li>
-                            <li data-slide-to="2" data-target="#carouselExampleIndicators"></li>
-                        </ol>
-                        <div class="carousel-inner radius-28">
-                            <div class="carousel-item active">
-                                <img alt="First slide" class="d-block w-100"
-                                     src="img/bitmap_8@3x.png">
-                                <div class="carousel-caption d-none d-lg-block">
-                                    <h5 class="font-weight-bold">Special title treatment</h5>
-                                    <p class="d-none d-xl-block font-weight-normal">With supporting text below as a
-                                        natural
-                                        lead-in to additional
-                                        content.</p>
-                                    <button class="border-radius-btn"><img class="mr-2 mb-1" src="img/group_2.png">Get
-                                        the deal
-                                    </button>
-                                </div>
-                                <span class="btn-product tag-slider text-center d-lg-block d-none">Hot deal</span>
-                            </div>
-                            <div class="carousel-item">
-                                <img alt="Second slide" class="d-block w-100"
-                                     src="img/bitmap_8@3x.png">
-                                <div class="carousel-caption d-none d-lg-block">
-                                    <h5 class="font-weight-bold">Special title treatment</h5>
-                                    <p class="d-none d-xl-block font-weight-normal">With supporting text below as a
-                                        natural
-                                        lead-in to additional
-                                        content.</p>
-                                    <button class="border-radius-btn"><img class="mr-2 mb-1" src="img/group_2.png">Get
-                                        the deal
-                                    </button>
-                                </div>
-                                <span class="btn-product tag-slider text-center d-lg-block d-none">Hot deal</span>
-                            </div>
-                            <div class="carousel-item">
-                                <img alt="Third slide" class="d-block w-100"
-                                     src="img/bitmap_8@3x.png">
-                                <div class="carousel-caption d-none d-lg-block">
-                                    <h5 class="font-weight-bold">Special title treatment</h5>
-                                    <p class="d-none d-xl-block font-weight-normal">With supporting text below as a
-                                        natural
-                                        lead-in to additional
-                                        content.</p>
-                                    <button class="border-radius-btn"><img class="mr-2 mb-1" src="img/group_2.png">Get
-                                        the deal
-                                    </button>
-                                </div>
-                                <span class="btn-product tag-slider text-center d-lg-block d-none">Hot deal</span>
-                            </div>
+
+                    <div class="carousel"
+                         data-flickity='{ "wrapAround": true , "freeScroll": false, "autoPlay": true, "pageDots": false}'>
+                        <div class="carousel-cell">
+                            <img class="" src="img/banner.png">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="" src="img/banner.png">
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="" src="img/banner.png">
                         </div>
                     </div>
+
+<!--                    <div class="carousel slide w-100" data-ride="carousel" id="carouselExampleIndicators">-->
+<!--                        <ol class="carousel-indicators">-->
+<!--                            <li data-slide-to="0" data-target="#carouselExampleIndicators"></li>-->
+<!--                            <li class="active" data-slide-to="1" data-target="#carouselExampleIndicators"></li>-->
+<!--                            <li data-slide-to="2" data-target="#carouselExampleIndicators"></li>-->
+<!--                        </ol>-->
+<!--                        <div class="carousel-inner radius-28">-->
+<!--                            <div class="carousel-item mr-5">-->
+<!--                                <img alt="First slide" class="d-block w-100"-->
+<!--                                     src="img/bitmap_8@3x.png">-->
+<!--                                <div class="carousel-caption d-none d-lg-block">-->
+<!--                                    <h5 class="font-weight-bold">Special title treatment</h5>-->
+<!--                                    <p class="d-none d-xl-block font-weight-normal">With supporting text below as a-->
+<!--                                        natural-->
+<!--                                        lead-in to additional-->
+<!--                                        content.</p>-->
+<!--                                    <button class="border-radius-btn"><img class="mr-2 mb-1" src="img/group_2.png">Get-->
+<!--                                        the deal-->
+<!--                                    </button>-->
+<!--                                </div>-->
+<!--                                <span class="btn-product tag-slider text-center d-lg-block d-none">Hot deal</span>-->
+<!--                            </div>-->
+<!--                            <div class="carousel-item active mr-5">-->
+<!--                                <img alt="Second slide" class="d-block w-100"-->
+<!--                                     src="img/bitmap_8@3x.png">-->
+<!--                                <div class="carousel-caption d-none d-lg-block">-->
+<!--                                    <h5 class="font-weight-bold">Special title treatment</h5>-->
+<!--                                    <p class="d-none d-xl-block font-weight-normal">With supporting text below as a-->
+<!--                                        natural-->
+<!--                                        lead-in to additional-->
+<!--                                        content.</p>-->
+<!--                                    <button class="border-radius-btn"><img class="mr-2 mb-1" src="img/group_2.png">Get-->
+<!--                                        the deal-->
+<!--                                    </button>-->
+<!--                                </div>-->
+<!--                                <span class="btn-product tag-slider text-center d-lg-block d-none">Hot deal</span>-->
+<!--                            </div>-->
+<!--                            <div class="carousel-item">-->
+<!--                                <img alt="Third slide" class="d-block w-100"-->
+<!--                                     src="img/bitmap_8@3x.png">-->
+<!--                                <div class="carousel-caption d-none d-lg-block">-->
+<!--                                    <h5 class="font-weight-bold">Special title treatment</h5>-->
+<!--                                    <p class="d-none d-xl-block font-weight-normal">With supporting text below as a-->
+<!--                                        natural-->
+<!--                                        lead-in to additional-->
+<!--                                        content.</p>-->
+<!--                                    <button class="border-radius-btn"><img class="mr-2 mb-1" src="img/group_2.png">Get-->
+<!--                                        the deal-->
+<!--                                    </button>-->
+<!--                                </div>-->
+<!--                                <span class="btn-product tag-slider text-center d-lg-block d-none">Hot deal</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
                 </div>
             </div>
 
@@ -223,6 +238,7 @@
     </div>
 
     <div class="row justify-content-center main-background background-tab m-0 pb-5">
+
         <div class="col-md-8 col-sm-12">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item active">
@@ -1038,7 +1054,10 @@
 
                 </div>
             </div>
+
+<!--            <img class="snow-2x" src="img/group-65.png">-->
         </div>
+
     </div>
 
     <div class="row justify-content-center main-background align-items-center text-center bg-danger m-0 p-2 w-100 hr-bottom ">
@@ -1122,7 +1141,7 @@
 <script crossorigin="anonymous" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-<script src="animation/animation-two-way.js"></script>
+<script src="slider/flickity.js"></script>
 <script src="index.js"></script>
 
 
