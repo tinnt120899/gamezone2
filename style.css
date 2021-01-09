@@ -6,15 +6,6 @@ body {
     letter-spacing: normal;
 }
 
-canvas {
-    position: absolute;
-    width: 100%;
-    height: 560px;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
 .container-fluid {
     background-color: #05193c;
     font-family: 'Noto Sans JP', sans-serif;
@@ -125,8 +116,8 @@ canvas {
 }
 
 .background-tab {
-    background-image: url("img/artboard-1.png"), url("img/artboard-2.png");
-    background-position: right center, left center;
+    background-image: url("img/group-65_2.png"), url("img/group-65.png");
+    background-position: right bottom, left top;
     background-repeat: no-repeat, no-repeat;
 }
 
@@ -247,15 +238,12 @@ a.nav-link {
     font-size: 14px;
 }
 
-.title-menu {
-    color: #ffffff !important;
-}
-
 .searchInput {
-    border-radius: 20px !important;
-    border: solid 1px #707070 !important;
+    /*border-radius: 20px !important;*/
+    /*border: solid 1px #707070 !important;*/
+    /*background-color: #ffffff;*/
+    color: #ffffff !important;
     font-size: 12px;
-    background-color: #ffffff;
     background-image: url('img/icon-24-px-ic-search.png');
 
     background-position: 10px 7px;
@@ -263,6 +251,15 @@ a.nav-link {
     padding: 8px 20px 8px 40px;
     margin: 8px;
 
+    /*opacity: 0.5;*/
+    border-radius: 20px;
+    border: solid 1px #57baf7;
+    background-color: #0b3c91;
+
+}
+
+.title-menu {
+    color: #ffffff !important;
 }
 
 /*card-product*/
@@ -306,7 +303,10 @@ a.nav-link {
 }
 
 .product-details {
-    /*padding: 30px;*/
+    background-image: url('img/s-now.png');
+    background-position: right -50px bottom -70px;
+    background-size: auto;
+    background-repeat: no-repeat;
 }
 
 .product-catagory {
@@ -375,7 +375,97 @@ a.nav-link {
     font-size: 10px;
 }
 
+/*flickitu-carousel*/
+
+.carousel {
+    background: rgba(0, 0, 0, 0);
+    height: 300px;
+    align-items: center !important;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.carousel-cell {
+    height: 300px;
+    width: 80%;
+    overflow: hidden !important;
+}
+
+.carousel-cell img {
+    height: 200px;
+    width: 100% !important;
+    margin-top: 6%;
+}
+
+.carousel-cell .carousel-caption {
+    display: none !important;
+}
+
+.carousel-cell .tag-slider {
+    display: none !important;
+}
+
+.is-selected img {
+    height: 280px;
+    width: 100% !important;
+    margin-top: 0;
+}
+
+.is-selected .carousel-caption {
+    display: block !important;
+}
+
+.is-selected .tag-slider {
+    display: block !important;
+
+}
+
+/* smaller, dark, rounded square */
+.flickity-button {
+    background-image: linear-gradient(to bottom, #02b6ff, #0158b1), linear-gradient(to bottom, #0158b1, #02b6ff) !important;
+}
+
+/*.flickity-prev-next-button {*/
+/*    width: 10% !important;*/
+/*    height: 13% !important;*/
+/*    border-radius: 20px !important;*/
+/*}*/
+
+/*.flickity-button:active {*/
+/*    opacity: 1 !important;*/
+/*}*/
+
+/*!* arrow color *!*/
+.flickity-prev-next-button .arrow {
+    fill: white;
+}
+
+/*.flickity-prev-next-button.no-svg {*/
+
+/*}*/
+/*!* position outside *!*/
+/*.flickity-prev-next-button.previous {*/
+/*    left: 42% !important;*/
+/*    top: 92% !important;*/
+/*}*/
+/*.flickity-prev-next-button.next {*/
+/*    right: 42% !important;*/
+/*    top: 92% !important;*/
+/*}*/
+
+.carousel-caption {
+    width: 50%;
+    left: 5%;
+    top: 5%;
+    text-align: left;
+}
+
+
 button:focus {
+    outline: 0;
+}
+
+input:focus {
     outline: 0;
 }
 
@@ -390,58 +480,4 @@ button:focus {
     }
 
 
-}
-
-/*flickitu-carousel*/
-
-.carousel {
-    background: rgba(0, 0, 0, 0);
-    height: 300px;
-    align-items: center !important;
-    width: 100%;
-    vertical-align: middle;
-}
-
-.carousel-cell {
-    height: 300px;
-    width: 80%;
-
-}
-
-.carousel-cell img {
-    height: 200px;
-    width: 100% !important;
-    margin-top: 4%;
-
-}
-
-.is-selected img {
-    height: 280px;
-    width: 100% !important;
-    margin-top: 0;
-}
-
-/*bootstrap-carousel*/
-
-.carousel-caption {
-    width: 50%;
-    left: 5%;
-    top: 5%;
-    text-align: left;
-}
-
-.carousel-indicators li {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-}
-
-.carousel-indicators li.active {
-    width: 20px;
-    height: 10px;
-    border-radius: 15px;
-}
-
-.carousel-item img {
-    max-height: 300px;
 }
